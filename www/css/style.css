@@ -1,0 +1,59 @@
+body {
+}
+
+.border {
+	border: 1px solid red;
+}
+
+main.container{
+	padding: .5rem 3rem;
+}
+
+main {
+	background-color: #FFFFFF;
+	border-radius: 3rem;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+header img {
+	margin-top: 1.5rem;
+	width: 150px;
+	margin-bottom: 1rem;
+}
+
+.after-header {
+	width: 30%;
+	height: 2px;
+}
+
+#plot {
+	margin-bottom: .5rem;
+	padding: 1rem;
+}
+
+#controls {
+	margin-bottom: 4rem;
+	padding: 1rem;
+}
+
+#description {
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+.control-group {
+	padding: 1rem 0 1rem 2rem;
+}
+
+footer {
+	padding: 1.5rem;
+}
+
+.shadow {
+	border-radius: 3rem;
+  	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.shadow:hover {
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

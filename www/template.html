@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>TESC Collaboration Network</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		
+		{{ headContent() }}
+		{{ bootstrapLib() }}
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<main class="container">
+			
+			<header class="row text-center">
+				<h1 class="display-4">Tilburg Experience Sampling Center</h1>
+				<img src="img/logo.png" class="img-responsive center-block">
+				<h3>Collaboration Network</h3>
+			</header>
+
+			<hr class="after-header">
+
+			
+			<section id="plot" class="row">
+				<div class="col-md-12 text-center">
+					{{ plot }}
+				</div>
+			</section>
+
+
+			<section id="controls" class="row shadow">
+				<div class="col-md-12 text-left">
+					<h4>Network configuration:</h4>
+				</div>
+
+				<div class="control-group col-md-4">
+					{{ tesc_matrix_name }}	
+					{{ groups }}	
+					{{ layout }}	
+				</div>
+
+				<div class="control-group col-md-4">
+					{{ borders }}	
+					{{ bidirectional }}	
+					{{ directed }}	
+					{{ diag }}	
+					{{ cut }}	
+				</div>
+
+				<div class="control-group col-md-4">
+					{{ vsize }}
+					{{ vTrans }}
+				</div>
+			</section>
+
+
+			<section id="description" class="row shadow">
+				
+				<div class="col-md-12 text-left">
+					<h4>Description:</h4>
+				</div>
+
+				<div class="col-md-12">
+					<dl class="dl-horizontal">
+						<dt>Data</dt>
+						<dd>The network graphs are based on the matrices provided by the <strong>ina</strong> package (i.e., <a href="https://github.com/mihaiconstantin/ina">https://github.com/mihaiconstantin/ina</a>). Data used to build the matrices were collected using the web scraping tool <strong>TescPerf</strong> (i.e., <a href="https://github.com/mihaiconstantin/TescPerf">https://github.com/mihaiconstantin/TescPerf</a>). The web interface around <strong>TescPerf</strong> (i.e., <strong>TescPerfWeb</strong> - <a href="https://github.com/mihaiconstantin/TescPerfWeb">https://github.com/mihaiconstantin/TescPerfWeb</a>) can be accessed at <a href="http://constantinmihai.com:100">http://constantinmihai.com:100</a>.</dd>
+						<br>
+						<dt>Dependencies</dt>
+						<dd>The following interface was built with <strong>qgraph</strong> (i.e., <a href="https://github.com/SachaEpskamp/qgraph">https://github.com/SachaEpskamp/qgraph</a>) for plotting the network graphs and <strong>Shiny</strong> (i.e., <a href="https://shiny.rstudio.com/">https://shiny.rstudio.com/</a>) for reactivity.</dd>
+					</dl>
+				</div>
+			</section>
+
+			<footer class="row">
+				<div class="col-md-12 text-center">
+					<a href="http://constantinmihai.com:33">TESC landing page</a>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
